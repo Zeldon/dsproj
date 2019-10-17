@@ -2,6 +2,7 @@ dsproj
 ==============================
 
 Template for a standard DS project. With some customizations.
+Use checkboxes to ensure key steps are followed.
 
 
 ## Initializations
@@ -62,6 +63,7 @@ We should self add data files that should not be included once project has been 
 
 Project Organization
 ------------
+<details>
 
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
@@ -108,6 +110,6 @@ Project Organization
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
 
-
+</details>
 --------
 
