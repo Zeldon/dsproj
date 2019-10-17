@@ -7,9 +7,9 @@ Template for a standard DS project. With some customizations.
 ## Initializations
 
 ### 1. Environment
-- [] <small>Do remember to switch to correct git remote.</small>  
+- [ ] <small>Do remember to switch to correct git remote.</small>  
 
-- [] Environment is through [virtualenv](https://virtualenv.pypa.io/en/latest/) and [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/).  
+- [ ] Environment is through [virtualenv](https://virtualenv.pypa.io/en/latest/) and [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/).  
 Initialize after pip installs as such:  
 
         pip install virtualenv
@@ -25,7 +25,7 @@ Initialize after pip installs as such:
         mkvirtualenv env1
 
 
-- [] Then proceed with requirements install...  
+- [ ] Then proceed with requirements install...  
 Its better to install requirements via makefile: `make requirements`  
 This essentially executes steps:  
 
@@ -36,7 +36,13 @@ TODO:
 (This actually installs a ton of requirements so <u>refresh and use own requirements</u>.)
 
 
-### 2. Template
+### 2. Key Notes
+
+- [ ] Data folder is delibrately not excluded from gitignore to show flow of folder structures.
+We should self add data files that should not be included once project has been setup.  
+
+
+### 3. Template
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>.</small></p>  
 
 `pip install cookiecutter`  
