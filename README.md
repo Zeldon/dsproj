@@ -4,12 +4,42 @@ dsproj
 Template for a standard DS project. With some customizations.
 
 
+## Initializations
+
+### 1. Environment
+- [] <small>Do remember to switch to correct git remote.</small>  
+
+- [] Environment is through [virtualenv](https://virtualenv.pypa.io/en/latest/) and [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/).  
+Initialize after pip installs as such:  
+
+        pip install virtualenv
+        pip install virtualenvwrapper
+
+        $ export WORKON_HOME=~/Envs
+        $ mkdir -p $WORKON_HOME
+        $ source /usr/local/bin/virtualenvwrapper.sh
 
 
+    Then...
 
-Standard Template
----
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>  
+        mkvirtualenv env1
+
+
+- [] Then proceed with requirements install...  
+Its better to install requirements via makefile: `make requirements`  
+This essentially executes steps:  
+
+    `pip install -U pip setuptools wheel`  
+    `pip install -r base_requirements.txt` 
+
+TODO:  
+(This actually installs a ton of requirements so <u>refresh and use own requirements</u>.)
+
+
+### 2. Template
+<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>.</small></p>  
+
+`pip install cookiecutter`  
 
 `cookiecutter https://github.com/drivendata/cookiecutter-data-science`
 
